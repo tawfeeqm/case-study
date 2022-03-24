@@ -8,5 +8,6 @@ exports.getRecords = async (startDate, endDate, minCount, maxCount) => {
   if (!Number.isInteger(minCount)) throwError(400, `Invalid (minCount) type: ${typeof minCount}. Expecting type integer`);
   if (!Number.isInteger(maxCount)) throwError(400, `Invalid (maxCount) type: ${typeof maxCount}. Expecting type integer`);
   const result = await getRecordsByYearMonthDayAndMinMaxCount(startDate, endDate, minCount, maxCount);
+  // I would have the returned object as response function that takes the object as a parameter
   return { code: 0, msg: "success", records: result};
 };
