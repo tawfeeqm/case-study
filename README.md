@@ -63,7 +63,7 @@ Start the server
 | :-------- | :------- | :------------------------- | 
 | `code` | `int` | `0` |
 | `msg` | `str` |  `Success` |
-| `records` | `array of objects` | `{"key":"TAKwGc6Jr4i8Z487","createdAt":"2017-01-28T01:22:14.398Z","totalCount":2800}` | 
+| `records` | `array of objects` | `[{"key":"TAKwGc6Jr4i8Z487","createdAt":"2017-01-28T01:22:14.398Z","totalCount":2800}]` | 
 
 
 #### Failed Response
