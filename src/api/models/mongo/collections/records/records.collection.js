@@ -26,7 +26,7 @@ exports.getRecordsByYearMonthDayAndMinMaxCount = async (startDate, endDate, minC
       $match: {
         totalCount: {
           $gte: minCount,
-          $lt: maxCount
+          $lte: maxCount
         }
       }
     }
